@@ -8,3 +8,69 @@ Invitation Link
 
 Contest Link
 https://codeforces.com/contests/583424
+
+A. Save MIT WPU Computer Science Lab
+time limit per test1 s.
+memory limit per test256 MB
+Oh no! The computer servers in MIT WPU's engineering lab are running out of memory during a critical project submission day! As a brilliant engineering student, you’ve been tasked with saving the day by uploading some of your own RAM to keep the system running.
+
+You need to upload n
+ GB of RAM to the servers. Each second, you can contribute either 0
+ GB or 1
+ GB of RAM. However, there’s a restriction due to the campus network's bandwidth: in any k
+ consecutive seconds, the network can handle uploading at most 1
+ GB of RAM.
+
+Your goal is to figure out the minimum number of seconds required to successfully upload n
+ GB of RAM while adhering to the bandwidth restriction.
+
+Can you ensure the servers at MIT WPU continue to function smoothly?
+
+Input
+Each test contains multiple test cases. The first line of input contains a single integer t
+ (1≤t≤104
+) — the number of test cases. The description of the test cases follows.
+
+The first and only line of each test case contains two integers n
+ and k
+ (1≤n,k≤100
+) — the number of GBs that you want to upload and the length of the time window respectively.
+
+Output
+For each test case, output a single integer — the minimum number of seconds needed to upload n
+ GBs of RAM.
+
+Example
+InputCopy
+6
+5 1
+2 2
+2 3
+1 7
+11 5
+100 100
+OutputCopy
+5
+3
+4
+1
+51
+9901
+Note
+In the first test case, you can upload 1
+ GB of RAM per second, so to upload 5
+ GBs, you need 5
+ seconds.
+
+In the second test case, you can upload 1
+ GB in the first second, 0
+ GBs in the second second, and 1
+ GB in the third second, which in total adds up to exactly 2
+ GBs of uploaded RAM.
+
+In the third test case, you can upload 1
+ GB in the first second, 0
+ GBs in the second second, 0
+ GBs in the third second, and 1
+ GB in the fourth second, which in total adds up to exactly 2
+ GBs of uploaded RAM.
