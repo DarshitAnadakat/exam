@@ -74,3 +74,58 @@ In the third test case, you can upload 1
  GBs in the third second, and 1
  GB in the fourth second, which in total adds up to exactly 2
  GBs of uploaded RAM.
+
+
+
+
+-----------------------------------------------------------------
+B
+
+B. Easy Problem
+time limit per test1 s.
+memory limit per test256 MB
+As part of an intriguing puzzle challenge at MIT WPU, you are presented with three digits 𝑎
+, 𝑏
+, and 𝑐
+. Your task is to determine whether these digits form a stair, a peak, or neither.
+
+A stair satisfies the condition 𝑎<𝑏<𝑐
+.
+A peak satisfies the condition 𝑎<𝑏>𝑐
+.
+Analyze the digits carefully and classify them into one of these categories to solve the challenge!
+
+Input
+The first line contains a single integer 𝑡
+ (1≤𝑡≤1000
+) — the number of test cases.
+
+The only line of each test case contains three digits 𝑎
+, 𝑏
+, 𝑐
+ (0≤𝑎
+, 𝑏
+, 𝑐≤9
+).
+
+Output
+For each test case, output "STAIR" if the digits form a stair, "PEAK" if the digits form a peak, and "NONE" otherwise (output the strings without quotes).
+
+Example
+InputCopy
+7
+1 2 3
+3 2 1
+1 5 3
+3 4 1
+0 0 0
+4 1 7
+4 5 7
+OutputCopy
+STAIR
+NONE
+PEAK
+PEAK
+NONE
+NONE
+STAIR
